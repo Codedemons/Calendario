@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
-    
+
     <!-- Favicon -->
     <link href="img/Logo.png" rel="icon" type="image/png">
 
@@ -24,10 +24,6 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">  
-    <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
-    <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
 </head>
 
 <body>
@@ -39,7 +35,7 @@
                     <div class="d-inline-flex align-items-center">                        
                         <a class="text-white px-3" href="">Help</a>
                         <span class="text-white">|</span>
-                        <a class="text-white pl-3" href="">Suppor</a>
+                        <a class="text-white pl-3" href="">Support</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-right">
@@ -66,12 +62,13 @@
     </div>
     <!-- Topbar End -->
 
+
     <!-- Navbar Start -->
     <div class="container-fluid position-relative nav-bar p-0">
         <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
             <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
                 <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Geli</span>-POP</h1>
+                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">GELI</span>-POP</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -83,7 +80,7 @@
                         <a href="product.html" class="nav-item nav-link">Productos</a>
                     </div>
                     <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">GELi</span>-POP</h1>
+                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">GELI</span>-POP</h1>
                     </a>
                     <div class="navbar-nav mr-auto py-0">
                         <a href="calendario.html" class="nav-item nav-link">Calendario</a>                        
@@ -93,100 +90,52 @@
             </nav>
         </div>
     </div>
-    <!-- Navbar End -->    
+    <!-- Navbar End -->
 
-    
-    
-  <div class="content">
-    <div id='calendar'></div>
-  </div>
+    <br>
+    <br>
+    <br>
     
 
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script src='fullcalendar/packages/core/main.js'></script>
-    <script src='fullcalendar/packages/interaction/main.js'></script>
-    <script src='fullcalendar/packages/daygrid/main.js'></script>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      plugins: [ 'interaction', 'dayGrid' ],
-      defaultDate: '2020-02-12',
-      editable: true,
-      locale: 'es',
-      eventLimit: true, // allow "more" link when too many events
-      events: [
-        {
-          title: 'Evento de todo el dia',
-          start: '2020-02-01'
-        },
-        {
-          title: 'Viejo Evento',
-          start: '2020-02-07',
-          end: '2020-02-10'
-        },
-        {
-          groupId: 999,
-          title: 'Repetir Evento',
-          start: '2020-02-09T16:00:00'
-        },
-        {
-          groupId: 999,
-          title: 'Repetir Evento',
-          start: '2020-02-16T16:00:00'
-        },
-        {
-          title: 'Conferencia',
-          start: '2020-02-11',
-          end: '2020-02-13'
-        },
-        {
-          title: 'Reunion',
-          start: '2020-02-12T10:30:00',
-          end: '2020-02-12T12:30:00'
-        },
-        {
-          title: 'Almuerzo',
-          start: '2020-02-12T12:00:00'
-        },
-        {
-          title: 'Reunion',
-          start: '2020-02-12T14:30:00'
-        },
-        {
-          title: 'Hora Feliz',
-          start: '2020-02-12T17:30:00'
-        },
-        {
-          title: 'Cena',
-          start: '2020-02-12T20:00:00'
-        },
-        {
-          title: 'Cumpleaños',
-          start: '2020-02-13T07:00:00'
-        },
-        {
-          title: 'Click para ir a Google',
-          url: 'http://google.com/',
-          start: '2020-02-28'
-        }
-      ]
-    });
-
-    calendar.render();
-  });
-
-    </script>
-
-    <script src="js/main.js"></script>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-12">
+        <!-- Card -->
+        <div class="card card-hover ">
+        <a href="blog-single.html">
+        <img src="./img/portfolio-2.jpg" class="img-fluid  rounded-top-md" alt=""></a>
+        <!-- Card Body -->
+        <div class="card-body">
+        <a href="#" class="badge bg-info mb-3">Courses</a>
+        <h3><a href="blog-single.html" class="text-inherit">
+        How to become modern Stack Developer in 2020
+        </a>
+        </h3>
+        <p>Lorem ipsum dolor sit amet, accu msan in, tempor dictum nequrem ipsum...</p>
+        <!-- Media Content -->
+        <div class="row align-items-center g-0 mt-4">
+        <div class="col-auto">
+        <img src="../assets/images/avatar/avatar-7.jpg" alt="" class="rounded-circle avatar-sm me-2">
+        </div>
+        <div class="col lh-1">
+        <h5 class="mb-1">Reva Yokk</h5>
+        <p class="fs-6 mb-0">September 05, 2020</p>
+        </div>
+        <div class="col-auto">
+        <p class="fs-6 mb-0">20 Min Read</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
 
+        
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
