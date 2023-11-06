@@ -26,6 +26,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="fonts/icomoon/style.css">  
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
     <link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />    
     <link rel="stylesheet" type="text/css" href="css/home.css">
@@ -90,11 +91,9 @@
 
     
     <?php
-include('complemento\config.php');
-
+  include('complemento\config.php');
   $SqlEventos   = ("SELECT * FROM eventoscalendar");
   $resulEventos = mysqli_query($con, $SqlEventos);
-
 ?>
 <div class="mt-5"></div>
 
