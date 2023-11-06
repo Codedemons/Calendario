@@ -24,5 +24,5 @@ $UpdateProd = ("UPDATE eventoscalendar
     WHERE id='".$idEvento."' ");
 $result = mysqli_query($con, $UpdateProd);
 
-header("Location:index.php?ea=1");
+header("Location:../calendario.php?ea=1");
 ?>

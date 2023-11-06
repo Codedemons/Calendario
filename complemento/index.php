@@ -174,10 +174,5 @@ eventClick:function(event){
 
 </script>
 
-
-<!--------- WEB DEVELOPER ------>
-<!--------- URIAN VIERA   ----------->
-<!--------- PORTAFOLIO:  https://blogangular-c7858.web.app  -------->
-
 </body>
 </html>
