@@ -7,7 +7,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-  <form name="formEvento" id="formEvento" action="complemento/nuevoEvento.php" class="form-horizontal" method="POST">
+  <fordm name="formEvento" id="formEvento" action="complemento/nuevoEvento.php" class="form-horizontal" method="POST">
 		<div class="form-group">
 			<label for="evento" class="col-sm-12 control-label">Nombre del Evento</label>
 			<div class="col-sm-10">
@@ -17,7 +17,7 @@
     <div class="form-group">
       <label for="fecha_inicio" class="col-sm-12 control-label">Fecha</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="fecha_inicio" id="fecha_inicio" placeholder="Fechagi ">
+        <input type="text" class="form-control" name="fecha_inicio" id="fecha_inicio" placeholder="Fecha ">
       </div>
     </div>
     <div class="form-group">
@@ -51,7 +51,8 @@
         <i class="material-icons">close</i>
         </button>
     	</div>
-	</form>
+    
+	</fordm>
       
     </div>
   </div>
