@@ -13,12 +13,10 @@
         include('complementos\wrapper.php');        
     ?>
 
-    <div class="main-panel">
-        
+    <div class="main-panel">    
         <?php  
             include('complementos\nav.php');        
         ?>
-
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -227,38 +225,9 @@
             </div>
         </div>
 
-
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                               Blog
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                </p>
-            </div>
-        </footer>
+        <?php  
+            include('complementos\head.php');        
+        ?>
 
     </div>
 </div>
