@@ -148,11 +148,9 @@ $(document).ready(function() {
 //Nuevo Evento
   select: function(start, end){
       $("#exampleModal").modal();
-      $("input[name=fecha_inicio]").val(start.format('DD-MM-YYYY'));
-       
-      var valorFechaFin = end.format("DD-MM-YYYY");
-      var F_final = moment(valorFechaFin, "DD-MM-YYYY").subtract(1, 'days').format('DD-MM-YYYY'); //Le resto 1 dia
-      $('input[name=fecha_fin').val(F_final);  
+      $("input[name=fecha_inicio]").val(start.format('DD-MM-YYYY'));       
+      var Hora = moment().format('HH:mm');
+      $('input[name=Hora').val(Hora);
 
     },
       
@@ -160,11 +158,11 @@ $(document).ready(function() {
       <?php
        while($dataEvento = mysqli_fetch_array($resulEventos)){ ?>
           {
-          _id: '<?php echo $dataEvento['id']; ?>',
-          title: '<?php echo $dataEvento['evento']; ?>',
-          start: '<?php echo $dataEvento['fecha_inicio']; ?>',
-          end:   '<?php echo $dataEvento['fecha_fin']; ?>',
-          color: '<?php echo $dataEvento['color_evento']; ?>'
+          _id: '<?php echo $dataEvento['idEventos']; ?>',
+          title: '<?php echo $dataEvento['Nombre']; ?>',
+          start: '<?php echo $dataEvento['Fecha']; ?>',
+          end:   '<?php echo $dataEvento['Precio']; ?>',
+          color: '<?php echo $dataEvento['Color']; ?>'
           },
         <?php } ?>
     ],

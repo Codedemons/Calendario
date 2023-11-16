@@ -23,13 +23,13 @@
     <div class="form-group">
       <label for="fecha_fin" class="col-sm-12 control-label">Hora</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="fecha_fin" id="fecha_fin" placeholder="Hora">
+        <input type="text" class="form-control" name="Hora" id="Hora" placeholder="Hora">
       </div>
     </div>
     <div class="form-group">
       <label for="fecha_fin" class="col-sm-12 control-label">Precio</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="fecha_fin" id="fecha_fin" placeholder="0.0">
+        <input type="text" class="form-control" name="precio" id="precio" placeholder="0.0">
       </div>
     </div>
   <div class="col-md-12" id="grupoRadio">
