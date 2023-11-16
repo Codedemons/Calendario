@@ -16,7 +16,7 @@ $color_evento      = $_REQUEST['color_evento'];
 
 
 $InsertNuevoEvento = "INSERT INTO eventoscalendar(
-      evento,
+      evento,s
       fecha_inicio,
       fecha_fin,
       color_evento

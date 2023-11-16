@@ -17,17 +17,19 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 CREATE SCHEMA IF NOT EXISTS `Gelipop` DEFAULT CHARACTER SET utf8 ;
 USE `Gelipop` ;
 
--- -----------------------------------------------------
--- Table `Gelipop`.`Eventos`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Gelipop`.`Eventos` (
-  `idEventos` INT NOT NULL,
-  `Nombre` VARCHAR(60) NULL,
-  `Color` VARCHAR(45) NULL,
-  `Fecha_Inicio` VARCHAR(45) NULL,
-  `Fecha_Fin` VARCHAR(45) NULL,
-  PRIMARY KEY (`idEventos`))
-ENGINE = InnoDB;
+
+-----
+--Original 
+-----
+
+CREATE TABLE `eventoscalendar` (
+  `id` int(11) NOT NULL,
+  `evento` varchar(250) DEFAULT NULL,
+  `color_evento` varchar(20) DEFAULT NULL,
+  `fecha_inicio` varchar(20) DEFAULT NULL,
+  `fecha_fin` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB;
+
 
 
 -- -----------------------------------------------------
