@@ -3,18 +3,18 @@
                 <nav class="pull-left">
                     <ul>
                         <li>
-                            <a href="#">
-                                Home
+                            <a href="index.php">
+                                Principal
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Company
+                            <a href="table.php">
+                                Productos
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Portfolio
+                            <a href="user.php">
+                                Usuarios
                             </a>
                         </li>
                         <li>
