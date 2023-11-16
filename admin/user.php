@@ -27,24 +27,19 @@
                                 <div class="card-body">
                                     <form>
                                         <div class="row">
-                                            <div class="col-md-5 pr-1">
+                                            <div class="col-md-6 pr-1">
                                                 <div class="form-group">
                                                     <label>Identicador</label>
                                                     <input type="text" class="form-control" disabled="" placeholder="Company" value="0">
                                                 </div>
                                             </div>
-                                            <div class="col-md-3 px-1">
+                                            <div class="col-md-6 px-1">
                                                 <div class="form-group">
                                                     <label>Username</label>
                                                     <input type="text" class="form-control" placeholder="Username" value="michael23">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4 pl-1">
-                                                <div class="form-group">
-                                                    <label for="exampleInputEmail1">Email address</label>
-                                                    <input type="email" class="form-control" placeholder="Email">
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                         <div class="row">
                                             <div class="col-md-6 pr-1">
