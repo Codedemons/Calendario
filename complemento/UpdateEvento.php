@@ -9,20 +9,21 @@ $idEvento         = $_POST['idEvento'];
 $evento            = ucwords($_REQUEST['evento']);
 $f_inicio          = $_REQUEST['fecha_inicio'];
 $fecha_inicio      = date('Y-m-d', strtotime($f_inicio)); 
+$hora              = $_REQUEST['Hora'];
+$hora_inicio       = date('H:i:s', strtotime($f_inicio));
+$precio            = $_REQUEST['precio'];
+$color_evento      = '#0064ff';
 
-$f_fin             = $_REQUEST['fecha_fin']; 
-$seteando_f_final  = date('Y-m-d', strtotime($f_fin));  
-$fecha_fin1        = strtotime($seteando_f_final."+ 1 days");
-$fecha_fin         = date('Y-m-d', ($fecha_fin1));  
-$color_evento      = $_REQUEST['color_evento'];
 
-$UpdateProd = ("UPDATE eventoscalendar 
-    SET evento ='$evento',
-        fecha_inicio ='$fecha_inicio',
-        fecha_fin ='$fecha_fin',
-        color_evento ='$color_evento'
-    WHERE id='".$idEvento."' ");
+$UpdateProd = ("UPDATE t_eventos 
+    SET Nombre ='$evento',
+        Fecha  ='$fecha_inicio',
+        Time   ='$hora',
+        Precio ='$precio',
+        Color ='$color_evento'
+    WHERE idEventos='".$idEvento."' ");
 $result = mysqli_query($con, $UpdateProd);
+
 
 header("Location:../calendario.php?ea=1");
 ?>

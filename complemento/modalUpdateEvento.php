@@ -2,17 +2,17 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Actualizar mi Eventox</h5>
+        <h5 class="modal-title">Actualizar Evento</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-  <form name="formEventoUpdate" id="formEventoUpdate" action="UpdateEvento.php" class="form-horizontal" method="POST">
+  <form name="formEventoUpdate" id="formEventoUpdate" action="complemento/UpdateEvento.php" class="form-horizontal" method="POST">
     <input type="hidden" class="form-control" name="idEvento" id="idEvento">
     <div class="form-group">
       <label for="evento" class="col-sm-12 control-label">Nombre del Evento</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="evento" id="evento" placeholder="Nombre del Evento" required/>
+        <input type="text" class="form-control" name="evento" id="evento" placeholder="Nombre" required/>
       </div>
     </div>
     <div class="form-group">
@@ -24,19 +24,18 @@
     <div class="form-group">
       <label for="fecha_fin" class="col-sm-12 control-label">Hora</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="fecha_fin" id="fecha_fin" placeholder="Hora">
+      <input type="time" class="form-control" name="Hora" id="Hora"  min="01:30" max="20:00" >
       </div>
     </div>
     <div class="form-group">
       <label for="fecha_fin" class="col-sm-12 control-label">Precio</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="fecha_fin" id="fecha_fin" placeholder="0.0">
+      <input type="number" class="form-control" name="precio" id="precio" placeholder="0.0" >
       </div>
     </div>
     <div class="col-md-12 activado">
  
-      <input type="radio" name="color_evento" id="orangeUpd" value="#FF5722" checked>
-      <label for="orangeUpd" class="circu" style="background-color: #FF5722;"> </label>
+      
       
     </div>
 

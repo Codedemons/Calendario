@@ -2,12 +2,12 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Registrar Nuevo Evento</h5>
+        <h5 class="modal-title">Nuevo Evento</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-  <fordm name="formEvento" id="formEvento" action="complemento/nuevoEvento.php" class="form-horizontal" method="POST">
+  <form name="formEvento" id="formEvento" action="./complemento/nuevoEvento.php" class="form-horizontal" method="POST">
 		<div class="form-group">
 			<label for="evento" class="col-sm-12 control-label">Nombre del Evento</label>
 			<div class="col-sm-10">
@@ -17,42 +17,37 @@
     <div class="form-group">
       <label for="fecha_inicio" class="col-sm-12 control-label">Fecha</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="fecha_inicio" id="fecha_inicio" placeholder="Fecha ">
+        <input type="text" class="form-control" name="fecha_inicio" id="fecha_inicio" placeholder="Fecha">
       </div>
     </div>
     <div class="form-group">
       <label for="fecha_fin" class="col-sm-12 control-label">Hora</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="Hora" id="Hora" placeholder="Hora">
+        <input type="time" class="form-control" name="Hora" id="Hora"  min="01:30" max="20:00" >
       </div>
     </div>
     <div class="form-group">
       <label for="fecha_fin" class="col-sm-12 control-label">Precio</label>
       <div class="col-sm-10">
-        <input type="text" class="form-control" name="precio" id="precio" placeholder="0.0">
+        <input type="number" class="form-control" name="precio" id="precio" placeholder="0.0" >
       </div>
     </div>
+
   <div class="col-md-12" id="grupoRadio">
   
-  <input type="radio" name="color_evento" id="blue" value="#2196F3">  
-  <label for="blue" class="circu" style="background-color: #2196F3;"> </label>
+  
 
-  <!---
-  <input type="radio" name="color_evento" id="indigo" value="#9c27b0">  
-  <label for="indigo" class="circu" style="background-color: #9c27b0;"> </label>
-  -->
 </div>
 		
 	   <div class="modal-footer">
-      	<button type="submit" class="btn btn-success">          
+      	<button type="submit" class="btn btn-success">
         <i class="material-icons">save</i>
         </button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">
-        <i class="material-icons">close</i>
+          <i class="material-icons">close</i>
         </button>
     	</div>
-    
-	</fordm>
+	</form>
       
     </div>
   </div>

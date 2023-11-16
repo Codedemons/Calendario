@@ -161,6 +161,7 @@ $(document).ready(function() {
           _id: '<?php echo $dataEvento['idEventos']; ?>',
           title: '<?php echo $dataEvento['Nombre']; ?>',
           start: '<?php echo $dataEvento['Fecha']; ?>',
+          middle: '<?php echo $dataEvento['Time']; ?>',
           end:   '<?php echo $dataEvento['Precio']; ?>',
           color: '<?php echo $dataEvento['Color']; ?>'
           },
@@ -223,8 +224,8 @@ eventClick:function(event){
     $('input[name=idEvento').val(idEvento);
     $('input[name=evento').val(event.title);
     $('input[name=fecha_inicio').val(event.start.format('DD-MM-YYYY'));
-    $('input[name=fecha_fin').val(event.end.format("DD-MM-YYYY"));
-
+    var Hora = moment().format('HH:mm');
+    $('input[name=Hora').val(Hora);    
     $("#modalUpdateEvento").modal();
   },
 

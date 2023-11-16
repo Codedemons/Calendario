@@ -1,33 +1,39 @@
+
+
 <?php
 date_default_timezone_set("America/Bogota");
 setlocale(LC_ALL,"es_ES");
 //$hora = date("g:i:A");
 
 require("config.php");
+
 $evento            = ucwords($_REQUEST['evento']);
 $f_inicio          = $_REQUEST['fecha_inicio'];
 $fecha_inicio      = date('Y-m-d', strtotime($f_inicio)); 
-
-$f_fin             = $_REQUEST['fecha_fin']; 
-$seteando_f_final  = date('Y-m-d', strtotime($f_fin));  
-$fecha_fin1        = strtotime($seteando_f_final."+ 1 days");
-$fecha_fin         = date('Y-m-d', ($fecha_fin1));  
-$color_evento      = $_REQUEST['color_evento'];
+$hora              = $_REQUEST['Hora'];
+$hora_inicio       = date('H:i:s', strtotime($f_inicio));
+$precio            = $_REQUEST['precio'];
+$color_evento      = '#0064ff';
 
 
-$InsertNuevoEvento = "INSERT INTO eventoscalendar(
-      evento,s
-      fecha_inicio,
-      fecha_fin,
-      color_evento
-      )
-    VALUES (
-      '" .$evento. "',
-      '". $fecha_inicio."',
-      '" .$fecha_fin. "',
-      '" .$color_evento. "'
-  )";
-$resultadoNuevoEvento = mysqli_query($con, $InsertNuevoEvento);
+
+$InsertNuevoEventos =  "INSERT INTO  t_eventos(
+       idEventos,
+       Nombre,
+       Fecha, 
+       Time,
+       Precio, 
+       Color) 
+      VALUES (
+        NULL, 
+        '" .$evento. "', 
+        '" .$fecha_inicio. "', 
+        '" .$hora. "',
+        '" .$precio. "',
+        '" .$color_evento. "'
+   )";
+
+$resultadoNuevoEvento = mysqli_query($con, $InsertNuevoEventos);
 
 header("Location:../calendario.php?e=1");
 
