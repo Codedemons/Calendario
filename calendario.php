@@ -90,11 +90,11 @@
     <!-- Navbar End -->    
 
     
-    <?php
-  include('complemento\config.php');
-  $SqlEventos   = ("SELECT * FROM t_eventos");
-  $resulEventos = mysqli_query($con, $SqlEventos);
-?>
+  <?php
+    include('complemento\config.php');
+    $SqlEventos   = ("SELECT * FROM t_eventos");
+    $resulEventos = mysqli_query($con, $SqlEventos);
+  ?>
 <div class="mt-5"></div>
 
 <div class="container">
