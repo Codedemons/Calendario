@@ -29,7 +29,7 @@ CREATE TABLE `eventoscalendar` (
   `fecha_inicio` varchar(20) DEFAULT NULL,
   `fecha_fin` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB;
-
+d
 
 
 -- -----------------------------------------------------
@@ -84,7 +84,7 @@ CREATE TABLE IF NOT EXISTS `Gelipop`.`T_Productos` (
   PRIMARY KEY (`idProductos`))
 ENGINE = InnoDB;
 
-
+d
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
