@@ -35,7 +35,7 @@
                                             </div>
                                             <div class="col-md-6 px-1">
                                                 <div class="form-group">
-                                                    <label>Username</label>
+                                                    <label>Nombre</label>
                                                     <input type="text" class="form-control" placeholder="Username" value="michael23">
                                                 </div>
                                             </div>
@@ -44,19 +44,24 @@
                                         <div class="row">
                                             <div class="col-md-6 pr-1">
                                                 <div class="form-group">
-                                                    <label>First Name</label>
+                                                    <label>Precio</label>
                                                     <input type="text" class="form-control" placeholder="Company" value="Mike">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 pl-1">
                                                 <div class="form-group">
-                                                    <label>Last Name</label>
+                                                    <label>Stock</label>
                                                     <input type="text" class="form-control" placeholder="Last Name" value="Andrew">
                                                 </div>
                                             </div>
-                                        </div>                                                                                
-                                        
-                                        <button type="submit" class="btn btn-info btn-fill pull-right">Update Profile</button>
+                                            <div class="col-md-6 pl-1">
+                                                <div class="form-group">
+                                                    <label>imagen</label>                                                    
+                                                    <input type="file" class="form-control-file" id="imagen" name="imagen" accept="image/*">
+                                                </div>
+                                            </div>                                            
+                                        </div>                                                                                                                        
+                                        <button type="submit" class="btn btn-info btn-fill pull-right">Guardar</button>
                                         <div class="clearfix"></div>
                                     </form>
                                 </div>
@@ -75,20 +80,20 @@
     
 </body>
 <!--   Core JS Files   -->
-<script src="../assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+<script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+<script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
 <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script src="../assets/js/plugins/bootstrap-switch.js"></script>
+<script src="./assets/js/bootstrap-switch.js"></script>
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!--  Chartist Plugin  -->
-<script src="../assets/js/plugins/chartist.min.js"></script>
+<script src="./assets/js/plugins/chartist.min.js"></script>
 <!--  Notifications Plugin    -->
-<script src="../assets/js/plugins/bootstrap-notify.js"></script>
+<script src="./assets/js/plugins/bootstrap-notify.js"></script>
 <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
-<script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
+<script src="./assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
-<script src="../assets/js/demo.js"></script>
+<script src="./assets/js/demo.js"></script>
 
 </html>
