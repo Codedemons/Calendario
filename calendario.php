@@ -92,7 +92,7 @@
     
     <?php
   include('complemento\config.php');
-  $SqlEventos   = ("SELECT * FROM eventoscalendar");
+  $SqlEventos   = ("SELECT * FROM t_eventos");
   $resulEventos = mysqli_query($con, $SqlEventos);
 ?>
 <div class="mt-5"></div>
