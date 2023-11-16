@@ -156,10 +156,10 @@ $(document).ready(function() {
       <?php
        while($dataEvento = mysqli_fetch_array($resulEventos)){ ?>
           {
-          _id: '<?php echo $dataEvento['idEventos']; ?>',
+          _id: '<?php   echo $dataEvento['idEventos']; ?>',
           title: '<?php echo $dataEvento['Nombre']; ?>',
           start: '<?php echo $dataEvento['Fecha']; ?>',
-          middle: '<?php echo $dataEvento['Time']; ?>',
+          middle:'<?php echo $dataEvento['Time']; ?>',
           end:   '<?php echo $dataEvento['Precio']; ?>',
           color: '<?php echo $dataEvento['Color']; ?>'
           },
