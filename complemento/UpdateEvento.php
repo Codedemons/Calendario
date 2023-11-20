@@ -12,7 +12,7 @@ $fecha_inicio      = date('Y-m-d', strtotime($f_inicio));
 $hora              = $_REQUEST['Hora'];
 $hora_inicio       = date('H:i:s', strtotime($f_inicio));
 $precio            = $_REQUEST['precio'];
-$color_evento      = '#0064ff';
+$color_evento;
 
 
 $UpdateProd = ("UPDATE t_eventos 

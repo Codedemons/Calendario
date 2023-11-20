@@ -160,7 +160,7 @@ $(document).ready(function() {
           title: '<?php echo $dataEvento['Nombre']; ?>',
           start: '<?php echo $dataEvento['Fecha']; ?>',
           middle:'<?php echo $dataEvento['Time']; ?>',
-          precio: '<?php echo $dataEvento['Precio']; ?>',
+          precio:'<?php echo $dataEvento['Precio']; ?>',
           end: '<?php echo $dataEvento['Color']; ?>'
           },
         <?php } ?>
@@ -223,7 +223,7 @@ eventClick:function(event){
     $('input[name=fecha_inicio').val(event.start.format('DD-MM-YYYY'));
     var Hora = moment().format('HH:mm');
     $('input[name=Hora').val(Hora);    
-    var precio;
+    var precio = event.precio;
     $('input[name=precio').val(precio);    
     $("#modalUpdateEvento").modal();
     
