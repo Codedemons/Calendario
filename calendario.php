@@ -156,12 +156,12 @@ $(document).ready(function() {
       <?php
        while($dataEvento = mysqli_fetch_array($resulEventos)){ ?>
           {
-          _id: '<?php   echo $dataEvento['idEventos']; ?>',
+          _id:   '<?php echo $dataEvento['idEventos']; ?>',
           title: '<?php echo $dataEvento['Nombre']; ?>',
           start: '<?php echo $dataEvento['Fecha']; ?>',
           middle:'<?php echo $dataEvento['Time']; ?>',
-          end:   '<?php echo $dataEvento['Precio']; ?>',
-          color: '<?php echo $dataEvento['Color']; ?>'
+          precio: '<?php echo $dataEvento['Precio']; ?>',
+          end: '<?php echo $dataEvento['Color']; ?>'
           },
         <?php } ?>
     ],
@@ -223,7 +223,11 @@ eventClick:function(event){
     $('input[name=fecha_inicio').val(event.start.format('DD-MM-YYYY'));
     var Hora = moment().format('HH:mm');
     $('input[name=Hora').val(Hora);    
+    var precio;
+    $('input[name=precio').val(precio);    
     $("#modalUpdateEvento").modal();
+    
+
   },
 
 
