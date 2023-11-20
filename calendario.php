@@ -220,9 +220,8 @@ eventClick:function(event){
     var idEvento = event._id;
     $('input[name=idEvento').val(idEvento);
     $('input[name=evento').val(event.title);
-    $('input[name=fecha_inicio').val(event.start.format('DD-MM-YYYY'));
-    var Hora = moment().format('HH:mm');
-    $('input[name=Hora').val(Hora);    
+    $('input[name=fecha_inicio').val(event.start.format('DD-MM-YYYY'));    
+    $('input[name=Hora').val(event.middle);        
     var precio = event.precio;
     $('input[name=precio').val(precio);    
     $("#modalUpdateEvento").modal();
