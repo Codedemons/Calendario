@@ -168,19 +168,20 @@ $(document).ready(function() {
 
 
 //Eliminar Evento
-eventRender: function(event, element) {
-    element
-      .find(".fc-content")
-      .prepend("<span id='btnCerrar' class='closeon material-icons'>&#xe5cd;</span>")
+eventRender: function(event, element) 
+{
+  element
+    .find(".fc-content")
+    .prepend("<span id='btnCerrar' class='closeon material-icons'>&#xe5cd;</span>")
     
-    //Eliminar evento
-    element.find(".closeon").on("click", function() {
-
-  var pregunta = confirm("Deseas Borrar este Evento?");   
-
-  if (pregunta) {
-    $("#calendar").fullCalendar("removeEvents", event._id);
-     $.ajax({
+  //Eliminar evento
+  element.find(".closeon").on("click", function() 
+  {
+    var pregunta = confirm("Deseas Borrar este Evento?");   
+    if (pregunta) 
+    {
+      $("#calendar").fullCalendar("removeEvents", event._id);
+      $.ajax({
             type: "POST",
             url: './complemento/deleteEvento.php',
             data: {id:event._id},
@@ -191,12 +192,14 @@ eventRender: function(event, element) {
               setTimeout(function () {
                 $(".alert-danger").slideUp(500);
               }, 3000); 
-
             }
         });      
+    } else 
+      {
+       return false;
       }
-    });
-  },
+  });
+},
 
 
 //Moviendo Evento Drag - Drop
@@ -225,10 +228,7 @@ eventClick:function(event){
     var precio = event.precio;
     $('input[name=precio').val(precio);    
     $("#modalUpdateEvento").modal();
-    
-
   },
-
 
   });
 
