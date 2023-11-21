@@ -24,7 +24,7 @@
     <div class="form-group">
       <label for="fecha_fin" class="col-sm-12 control-label">Hora</label>
       <div class="col-sm-10">
-      <input type="time" class="form-control" name="Hora" id="Hora"  min="01:30" max="20:00" >
+      <input type="time" class="form-control" name="Hora" id="Hora"  min="01:30" max="22:00" >
       </div>
     </div>
     <div class="form-group">
