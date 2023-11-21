@@ -131,7 +131,7 @@ $(document).ready(function() {
     header: {
       left: "prev,next today",
       center: "title",
-      right: "month,agendaWeek,agendaDay"
+      right: "month"
     },
 
     locale: 'es',
@@ -142,6 +142,7 @@ $(document).ready(function() {
     eventLimit: true, 
     selectable: true,
     selectHelper: false,
+    
 
 //Nuevo Evento
   select: function(start, end){
