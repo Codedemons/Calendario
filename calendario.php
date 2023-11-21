@@ -238,7 +238,6 @@ eventClick:function(event){
     $(".alert").slideUp(300);
   }, 3000); 
 
-
 });
 
 </script>
